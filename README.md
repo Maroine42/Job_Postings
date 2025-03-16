@@ -1,6 +1,6 @@
 # Overview
 
-Welcome to my analysis of the data job market, focusing on data analyst roles. This project was created out of a desire to navigate and understand the job market more effectively. It delves into the top-paying and in-demand skills to help find optimal job opportunities for data analysts.
+Welcome to my analysis of the data job market, focusing on Data Scientist roles. This project was created out of a desire to navigate and understand the job market more effectively. It delves into the top-paying and in-demand skills to help find optimal job opportunities for Data Scientists.
 
 The data sourced from a [public hugging face database](https://huggingface.co/datasets/lukebarousse/data_jobs), containing detailed information on job titles, salaries, locations, and essential skills. Through a series of Python scripts, I explore key questions such as the most demanded skills, salary trends, and the intersection of demand and salary in data analytics.
 
@@ -109,7 +109,7 @@ plt.show()
 
 ## Insights 
 
-- SQL is a Highly Demanded Skill Across Roles: SQL is prominently featured in job postings for Data Analysts (45%), Data Engineers (49%), and Data Scientists (33%). This indicates that SQL is a critical skill for professionals in data-related roles in France.
+- SQL is a Highly Demanded Skill Across Roles: SQL is prominently featured in job postings for Data Scientists (45%), Data Engineers (49%), and Data Scientists (33%). This indicates that SQL is a critical skill for professionals in data-related roles in France.
 
 - Python is a Key Skill for Data Engineers and Data Scientists: Python is highly requested for Data Engineers (57%) and Data Scientists (67%). This suggests that Python is essential for roles that involve more complex data processing and analysis.
 
@@ -118,7 +118,7 @@ plt.show()
 ## 2. How are in-demand skills trending for Data Scientists in France ?
 
 
-To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of the job postings. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
+To find how skills are trending in 2023 for Data Scientists, I filtered Data Scientist positions and grouped the skills by the month of the job postings. This got me the top 5 skills of Data Scientists by month, showing how popular skills were throughout 2023.
 
 ## Visualize Data
 
@@ -138,7 +138,7 @@ plt.show()
 ## Results
 
 ![skill_trend](Visualisations\Skill%20Trend\Skill_Trend.png)
-*Bar graph visualizing the trending top skills for data analysts in the US in 2023.*
+*Bar graph visualizing the trending top skills for Data Scientists in the US in 2023.*
 
 ## Insights 
 
@@ -153,7 +153,7 @@ plt.show()
 
 For this section i decided to focus my analysis in the US as most of the job postings from the database are from the US.
 
-To identify the highest-paying roles and skills, I only got jobs in the United States and looked at their median salary. But first I looked at the salary distributions of common data jobs like Data Scientist, Data Engineer, and Data Analyst, to get an idea of which jobs are paid the most.
+To identify the highest-paying roles and skills, I only got jobs in the United States and looked at their median salary. But first I looked at the salary distributions of common data jobs like Data Scientist, Data Engineer, and Data Scientist, to get an idea of which jobs are paid the most.
 
 
 ## Visualize Data
@@ -181,10 +181,10 @@ plt.show()
 
 - Data Scientists Earn More Than Data Engineers: The salary distribution for Data Scientists is generally higher than that for Data Engineers, suggesting that Data Scientist roles may offer higher compensation on average.
 
-- Data Analysts Have the Lowest Salary Range: Data Analysts, both senior and non-senior, have the lowest salary distributions among the listed roles. This reflects the relative entry-level nature of these positions compared to more specialized roles like Data Scientists and Data Engineers.
+- Data Scientists Have the Lowest Salary Range: Data Scientists, both senior and non-senior, have the lowest salary distributions among the listed roles. This reflects the relative entry-level nature of these positions compared to more specialized roles like Data Scientists and Data Engineers.
 
 
-## Highest Paid & Most Demanded Skills for Data Analysts
+## Highest Paid & Most Demanded Skills for Data Scientists
 
 Next, I narrowed my analysis and focused only on data scientist roles. I looked at the highest-paid skills and the most in-demand skills. I used two bar charts to showcase these.
 
@@ -193,10 +193,10 @@ Next, I narrowed my analysis and focused only on data scientist roles. I looked 
 ```python
 fig, ax = plt.subplots(2, 1)  
 
-# Top 10 Highest Paid Skills for Data Analysts
+# Top 10 Highest Paid Skills for Data Scientists
 sns.barplot(data=df_DA_top_pay, x='median', y=df_DA_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
 
-# Top 10 Most In-Demand Skills for Data Analystsr')
+# Top 10 Most In-Demand Skills for Data Scientistsr')
 sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', ax=ax[1], palette='light:b')
 
 plt.show()
@@ -272,11 +272,11 @@ Throughout this project, I deepened my understanding of the data scientist job m
 
 This project provided several general insights into the data job market for analysts:
 
-- Core Technical Skills are Fundamental: Skills like SQL, Python, and data visualization tools (e.g., Tableau, Excel) are essential for data analysts. These skills are frequently mentioned in job postings and are critical for data manipulation, analysis, and reporting.
+- Core Technical Skills are Fundamental: Skills like SQL, Python, and data visualization tools (e.g., Tableau, Excel) are essential for Data Scientists. These skills are frequently mentioned in job postings and are critical for data manipulation, analysis, and reporting.
 
-- Experience and Specialization Enhance Earning Potential: Senior roles, such as Senior Data Analyst, command higher salaries compared to entry-level positions. Additionally, specialized skills in tools like Asana, Airtable, or advanced analytics platforms can further boost earning potential.
+- Experience and Specialization Enhance Earning Potential: Senior roles, such as Senior Data Scientist, command higher salaries compared to entry-level positions. Additionally, specialized skills in tools like Asana, Airtable, or advanced analytics platforms can further boost earning potential.
 
-- Growing Importance of Cloud and Advanced Analytics: There is an increasing demand for proficiency in cloud technologies (e.g., AWS) and advanced analytics tools (e.g., TensorFlow, Spark). This trend indicates that data analysts who can leverage these technologies are likely to have a competitive edge in the job market.
+- Growing Importance of Cloud and Advanced Analytics: There is an increasing demand for proficiency in cloud technologies (e.g., AWS) and advanced analytics tools (e.g., TensorFlow, Spark). This trend indicates that Data Scientists who can leverage these technologies are likely to have a competitive edge in the job market.
 
 
 # Challenges I Faced
@@ -294,4 +294,4 @@ This project was not without its challenges, but it provided good learning oppor
 
 # Conclusion
 
-This exploration into the data analyst job market has been incredibly informative, highlighting the critical skills and trends that shape this evolving field. The insights I got enhance my understanding and provide actionable guidance for anyone looking to advance their career in data analytics. As the market continues to change, ongoing analysis will be essential to stay ahead in data analytics. This project is a good foundation for future explorations and underscores the importance of continuous learning and adaptation in the data field.
+This exploration into the Data Scientist job market has been incredibly informative, highlighting the critical skills and trends that shape this evolving field. The insights I got enhance my understanding and provide actionable guidance for anyone looking to advance their career in data analytics. As the market continues to change, ongoing analysis will be essential to stay ahead in data analytics. This project is a good foundation for future explorations and underscores the importance of continuous learning and adaptation in the data field.
