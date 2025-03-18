@@ -133,7 +133,7 @@ plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
 plt.show()
 ```
 
-## Results
+## Resultats
 
 ![skill_trend](Visualisations/Skill%20Trend/Skill_Trend.png)
 
@@ -166,7 +166,7 @@ plt.gca().xaxis.set_major_formatter(ticks_x)
 plt.show()
 ```
 
-## Results
+## Resultats
 
 ![skill_dist](Visualisations/Salary%20Analysis/Salary_Distribution.png)
 
